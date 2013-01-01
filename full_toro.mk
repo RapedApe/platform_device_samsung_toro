@@ -37,6 +37,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
 # Inherit from toro device
 $(call inherit-product, device/samsung/toro/device_vzw.mk)
+# Inherit from Linaro common
+$(call inherit-product, device/linaro/common/common.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_toro
